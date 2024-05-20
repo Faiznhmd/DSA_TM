@@ -1,0 +1,1 @@
+//Constant O(1)
