@@ -17,6 +17,7 @@ console.log(nameMap.has(9)); //false
 
 //remove values
 nameMap.delete(1); //first key has been delete(true)
+
 console.log(nameMap.has(1)); //it become false becoz the first key has been deleted
 
 //get  size
