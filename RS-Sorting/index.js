@@ -30,3 +30,20 @@ const SelectionSort = (arr) => {
   }
   return arr;
 };
+
+//Insertion Sort
+
+const InsertionSort = (arr) => {
+  const n = arr.length;
+
+  for (let i = 0; i < n; i++) {
+    const key = arr[i];
+    const j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = key;
+  }
+  return arr;
+};
