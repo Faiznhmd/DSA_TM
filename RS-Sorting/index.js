@@ -1,5 +1,5 @@
 //Sort the given Array in Ascending order
-//[10,14,14,29,37]
+//arr=[10,14,14,29,37]
 
 //Bubble Sort
 
@@ -47,3 +47,28 @@ const InsertionSort = (arr) => {
   }
   return arr;
 };
+
+//Merge Sort
+
+function Mergesort(arr) {
+  if (arr.length <= 1) return arr;
+  let mid = Math.floor(arr.length / 2);
+
+  let left = Mergesort(arr.splice(0, mid));
+  let right = Mergesort(arr.splice(mid));
+
+  return merge(left, right);
+}
+
+function merge(left, right) {
+  let sortedArray = [];
+
+  while (left.length && right.length) {
+    if (left[0] < right[0]) {
+      sortedArray.push(left.shift());
+    } else {
+      sortedArray.push(right.shift());
+    }
+  }
+  return [...sortedArray, ...left, ...right];
+}
