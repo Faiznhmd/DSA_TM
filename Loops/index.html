@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const head = [1, 2, 3, 4, 5];
+      for (const num of head) {
+        // console.log(num);
+      }
+      //in Map
+      //map= Is an object that can hold key value pair
+      const map = new Map();
+      map.set('1', 'India');
+      map.set('2', 'France');
+      map.set('3', 'Acer');
+      map.set('4', 'Jharkhand');
+      // console.log(map);
+
+      for (const [maps, value] of map) {
+        // console.log(maps, ':-', value);
+        // this will console line wise
+      }
+
+      // in object
+      const myObject = {
+        game1: 'NFS',
+        game2: 'DFS',
+      };
+
+      for (const obj in myObject) {
+        console.log(myObject[obj]);
+      }
+
+      // set= add element in the new Map
+    </script>
+  </body>
+</html>
