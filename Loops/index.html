@@ -7,9 +7,11 @@
   </head>
   <body>
     <script>
+      //map
+
       const head = [1, 2, 3, 4, 5];
       for (const num of head) {
-        // console.log(num);
+        console.log(num);
       }
       //in Map
       //map= Is an object that can hold key value pair
@@ -18,10 +20,11 @@
       map.set('2', 'France');
       map.set('3', 'Acer');
       map.set('4', 'Jharkhand');
-      // console.log(map);
+      console.log(map);
+      // set= add element in the new Map
 
       for (const [maps, value] of map) {
-        // console.log(maps, ':-', value);
+        console.log(maps, ':-', value);
         // this will console line wise
       }
 
@@ -30,12 +33,25 @@
         game1: 'NFS',
         game2: 'DFS',
       };
-
       for (const obj in myObject) {
-        console.log(myObject[obj]);
+        console.log(myObject[obj]); //this will console NFS DFS
+        console.log(`${obj} for is ${myObject[obj]}`);
       }
 
-      // set= add element in the new Map
+      //in Array
+      const array = ['js', 'cpp', 'java'];
+      for (const arr in array) {
+        console.log(array[arr]);
+      }
+
+      //for each
+      const company = ['Json', 'Apple', 'Micro'];
+      // company.forEach(function (item) {
+      //   console.log(item);
+      // });
+      company.forEach((item) => {
+        console.log(item);
+      });
     </script>
   </body>
 </html>
