@@ -7,3 +7,13 @@ function duplicateArray(arr) {
   }
   return uniqueArr;
 }
+
+function remove(arr) {
+  const duplicate = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!duplicate.includes(arr[i])) {
+      duplicate.push(arr[i]);
+    }
+  }
+  return duplicate;
+}

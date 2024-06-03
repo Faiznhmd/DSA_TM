@@ -38,3 +38,19 @@ function calculaters(nums1, nums2, operaters) {
   }
   return results;
 }
+
+function cal(num1, num2, operater) {
+  let results;
+  if (operater === '+') {
+    results = num1 + num2;
+  } else if (operater === '-') {
+    results = num1 - num2;
+  } else if (operater === '*') {
+    results = num1 * num2;
+  } else if (operater === '/') {
+    results = num1 / num2;
+  } else {
+    throw new Error('Invalid Operater');
+  }
+  return results;
+}
