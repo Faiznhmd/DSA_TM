@@ -8,12 +8,22 @@ function duplicateArray(arr) {
   return uniqueArr;
 }
 
-function remove(arr) {
-  const duplicate = [];
+function repeat(arr) {
+  let duplicate = [];
   for (let i = 0; i < arr.length; i++) {
-    if (!duplicate.includes(arr[i])) {
+    if (!duplicate.includes.arr[i]) {
       duplicate.push(arr[i]);
     }
   }
-  return duplicate;
+  return uniqueArr;
+}
+
+function removeDuplicate(arr) {
+  let RemoveDuplicate = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!RemoveDuplicate.includes(arr[i])) {
+      RemoveDuplicate.push(arr[i]);
+    }
+  }
+  return RemoveDuplicate;
 }

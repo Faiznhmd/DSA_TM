@@ -5,3 +5,12 @@ function reverse_string(str) {
   }
   return reversed;
 }
+
+function reversed(str) {
+  let revere = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    revere += str[i];
+  }
+
+  return revere;
+}

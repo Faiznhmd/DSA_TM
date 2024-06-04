@@ -9,11 +9,11 @@ function getMaxNo(arr) {
   }
 }
 
-function getMAximumNo(arr) {
-  let max = arr[0];
-  for (let i = 0; i > arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+function maxNo(arrr) {
+  let max = arrr[0];
+  for (let i = 0; i < arrr.length; i++) {
+    if (arrr[i] > max) {
+      max = arrr[i];
     }
   }
   return max;

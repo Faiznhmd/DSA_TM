@@ -13,3 +13,13 @@ var capitalizeTitle = function (title) {
   }
   return words.join(' ');
 };
+
+function capitalFirstLetter(title) {
+  const word = title.toLowerCase().split(' ');
+  for (let i = 0; i < word.length; i++) {
+    if (word.length > 2) {
+      word[i] = word[i][0].toUpperCase() + word[i].slice(1);
+    }
+  }
+  return word.join(' ');
+}

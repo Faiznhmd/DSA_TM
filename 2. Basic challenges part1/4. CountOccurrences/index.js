@@ -11,21 +11,11 @@ function count(str, char) {
   return count;
 }
 
-function count(str, char) {
-  let counts = [];
+function countOcc(arr, char) {
+  let count = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === char) {
-      counts++;
-    }
-  }
-  return counts;
-}
-
-function index(nums, str) {
-  let count = [];
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === str) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === char) {
       count++;
     }
   }
